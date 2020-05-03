@@ -1,0 +1,17 @@
+@import '../../../../../assets/variables';
+
+.breaking-bad-ui-label {
+  margin: 0;
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.green {
+    color: $green;
+  }
+}
