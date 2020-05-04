@@ -1,0 +1,13 @@
+<div class="row sticky-top">
+  <div class="col-12">
+    <ng-container *ngIf="selected;else noSelected" >
+      <app-character-detail-data [character]="selected"></app-character-detail-data>
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #noSelected>
+  <app-character-detail-data-empty></app-character-detail-data-empty>
+</ng-template>
+
+

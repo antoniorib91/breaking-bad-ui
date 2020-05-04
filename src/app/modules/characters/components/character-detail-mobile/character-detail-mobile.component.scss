@@ -1,0 +1,37 @@
+@import '../../../../../assets/variables';
+
+.character-detail-mobile {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 1px;
+  display: flex;
+
+  .character-detail-content {
+    height: 100%;
+    width: 100%;
+
+    background-color: $black;
+    align-items: center;
+    display: flex;
+
+    &.hidden {
+      display: none;
+      width: 0;
+    }
+  }
+
+  ::ng-deep {
+
+    .breaking-bad-btn {
+      top: 50%;
+      position: relative;
+    }
+
+    .character-detail {
+      height: 100%;
+    }
+  }
+
+
+}

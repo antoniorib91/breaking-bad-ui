@@ -1,0 +1,15 @@
+<div class="row character-list">
+  <ng-container *ngFor="let character of characterList" >
+    <div class="col-xs-10 col-sm-10 col-md-3 col-lg-3 col-xl-3 ">
+      <app-character-card [character]="character" ></app-character-card>
+    </div>
+  </ng-container>
+</div>
+<div class="row">
+  <div class="col-12 mx-auto">
+    <div class="d-flex justify-content-center character-list-more-btn">
+      <app-button color="white" size="large" (click)="handleMoreButtonClick()" >More Characters</app-button>
+    </div>
+  </div>
+</div>
+

@@ -1,27 +1,89 @@
-# BreakingBadUi
+# Breaking Bad Ui
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+Para rodar esse projeto localmente é necessário ter instalado o NodeJS e o NPM
+Esse tutorial parte do ponto que você já tem o NodeJS e o NPM instalados.
 
-## Development server
+### Running local DEV
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+para rodar localmente o projeto é necessário
 
-## Code scaffolding
+instalar as dependencias do npm. então vamos começar 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+fazendo o download deste repositório. Após isso
 
-## Build
+acessar via terminal a pasta onde você fez o Download
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+e rodar o comando: 
 
-## Running unit tests
+```
+npm install
+``` 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+para instalar as dependencias. Caso ocorra algum problema de 
 
-## Running end-to-end tests
+permissões, rodar como super usuário, caso não tenha permissão
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+solicitar ao seu administrador .
 
-## Further help
+após instalar as dependências é possível rodar o ambiente de
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+desenvolvimento com o comando: 
+
+```
+npm start
+```
+
+então abrir seu navegador e navegar para  `http://localhost:4200/`
+
+caso deseje rodar os testes unitários é só rodar o comando:
+
+```
+npm run test
+```
+
+### Running Compiled for Production local
+É necessario estar via terminal dentro da pasta do projeto
+
+Rodar o comando para buildar o projeto:
+
+```
+npm run build:prd
+```
+e rodar o comando
+
+```
+node server.js
+```
+e acessar o navegado na pagina http://localhost:4000
+
+### Running with Doocker
+
+*É necessario estar via terminal dentro da pasta do projeto.*
+
+Rodar o comando para montar a imagem do docker.
+
+(Caso ocorram problemas, tentar rodar os camando no docker como super usuário o comando)
+
+```
+docker build -t braking-bad-ui .
+```
+
+A imagem criada apartir do comando se chama blog-ui
+
+caso deseje ver as imagens criadas, rodar o comando
+
+```
+docker images
+```
+
+para visualizar o nome das imagens criadas.
+
+para rodar o container, rodar com o comando abaixo:
+
+```
+docker docker run -p 4000:4000 braking-bad-ui
+```
+e acessar via navegador a url:
+
+http://localhost:4000
+

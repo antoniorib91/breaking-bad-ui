@@ -1,0 +1,47 @@
+@import '../../../../../assets/variables';
+
+.breaking-bad-title {
+  &.small {
+    font-size: 24px;
+  }
+
+  &.medium {
+    font-size: 36px;
+  }
+
+  &.large {
+    font-size: 46px;
+  }
+
+  &.bold {
+    font-weight: 900;
+  }
+
+  &.normal {
+    font-weight: 400;
+  }
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.green {
+    color: $green;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}

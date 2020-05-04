@@ -1,0 +1,16 @@
+@import '../../../../../assets/variables';
+
+.card-breaking-bad {
+  border: 2px solid $card_border_color;
+  background-color: $card_background_color;
+  color: $card_font_color;
+  margin: 10px 5px;
+
+  .card-footer {
+    border-color: $card_border_color;
+
+    &:empty {
+      display: none;
+    }
+  }
+}

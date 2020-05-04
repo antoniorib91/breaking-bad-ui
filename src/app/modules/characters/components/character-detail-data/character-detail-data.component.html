@@ -1,0 +1,27 @@
+<div class="character-detail" >
+  <app-label color="white" size="large">
+    {{ character.name }}
+  </app-label>
+  <img class="character-detail-image" [src]="character.img" height="300" width="230">
+  <app-label color="white">
+    Nickname: {{ character.nickname }}
+  </app-label>
+  <app-label color="white">
+    Birthday: {{ character.birthday }}
+  </app-label>
+  <app-label color="white">
+    Occupation: {{ character.occupation }}
+  </app-label>
+  <app-label color="white">
+    Status: {{ character.status }}
+  </app-label>
+  <app-label color="white">
+    Seasons: {{ character.appearance }}
+  </app-label>
+  <app-label color="white">
+    Portrayed:
+    <a target=”_blank” [href]="'http://www.google.com/search?q=' + this.getFormattedPortrayer()">
+      {{ character.portrayed }}
+    </a>
+  </app-label>
+</div>
