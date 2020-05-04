@@ -1,7 +1,44 @@
-.character-card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%
+.character-card {
+  min-height: 310px;
+  width: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+
+  ::ng-deep {
+    * {
+      cursor: pointer;
+    }
+
+    .card-breaking-bad {
+      height: 280px;
+      transition: width 0.8s, height 0.5s;
+    }
+  }
+
+  &:hover {
+    ::ng-deep {
+      .card-breaking-bad {
+        -webkit-box-shadow: 1px 2px 15px 5px rgba(26,26,26,0.6);
+        box-shadow: 1px 2px 15px 5px rgba(26,26,26,0.6);
+        width: 100%;
+        max-width: 100%;
+        height: 290px;
+        max-height: 290px;
+      }
+    }
+
+  }
+
+  .character-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+}
+
+@keyframes cardIn {
+
 }

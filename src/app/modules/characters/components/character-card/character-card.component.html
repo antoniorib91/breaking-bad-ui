@@ -1,6 +1,8 @@
-<app-card size="small">
-  <img class="card-img-top" [src]="character.img" height="200" width="160" imageTop>
-  <div class="character-card-body" body>
-    <app-label color="white">{{ character.name }}</app-label>
-  </div>
-</app-card>
+<div class="character-card">
+  <app-card size="small" (click)="handleCardClick()">
+    <img class="card-img-top character-card-img" [src]="character.img" height="200" width="160" imageTop>
+    <div class="character-card-body" body>
+      <app-label color="white">{{ character.name }}</app-label>
+    </div>
+  </app-card>
+</div>

@@ -1,9 +1,12 @@
-<div class="row sticky-top">
-  <div class="col-12">
+<div class="character-detail-mobile">
+  <div class="character-detail-content" [ngClass]="visible ? '': 'hidden'">
     <ng-container *ngIf="selected;else noSelected" >
       <app-character-detail-data [character]="selected"></app-character-detail-data>
     </ng-container>
   </div>
+  <app-button color="white" size="large" (click)="handleButtonClick()">
+    <span [innerHTML]="visible ? '&lsaquo;': '&rsaquo;'"></span>
+  </app-button>
 </div>
 
 <ng-template #noSelected>
@@ -11,3 +14,4 @@
 </ng-template>
 
 
+<!-- {{  }} -->
