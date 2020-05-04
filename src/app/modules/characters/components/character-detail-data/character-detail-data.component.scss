@@ -1,0 +1,12 @@
+.character-detail {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 50vh;
+
+  .character-detail-image {
+    align-self: center;
+    margin: 10px;
+  }
+}

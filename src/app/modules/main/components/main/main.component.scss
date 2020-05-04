@@ -1,0 +1,22 @@
+@import '../../../../../assets/variables';
+
+.main-container {
+  background-color: $main_background_color;
+  min-height: 100vh;
+
+  .main-top {
+    background-color: $main_top_background_color;
+    margin: 5px -10px;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-left {
+    &:empty {
+      border-right: 0;
+    }
+  }
+
+}
