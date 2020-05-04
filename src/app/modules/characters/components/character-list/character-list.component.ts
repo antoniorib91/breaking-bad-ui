@@ -39,13 +39,16 @@ export class CharacterListComponent implements OnInit, OnDestroy {
   }
 
   private handleResponse(response: Array<ICharacter>) {
-    // this.characterList.push(response);
+    this.handleCharacters(response);
+    this.characterList = this.service.getCharacters();
+  }
+
+  private handleCharacters(response: Array<ICharacter>) {
     if (this.characterList.length === 0) {
       this.service.setCharacters(response);
     } else {
       this.service.addCharacters(response);
     }
-    this.characterList = this.service.getCharacters();
   }
 
 
