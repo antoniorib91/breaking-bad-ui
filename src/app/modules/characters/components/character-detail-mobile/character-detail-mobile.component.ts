@@ -7,7 +7,6 @@ import { CharactersService } from '../../services/characters.service';
   selector: 'app-character-detail-mobile',
   templateUrl: './character-detail-mobile.component.html',
   styleUrls: ['./character-detail-mobile.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CharacterDetailMobileComponent implements OnInit, OnDestroy {
 
