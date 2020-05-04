@@ -9,10 +9,10 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('cardAnimation', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate('5s', style({ opacity: 1 })),
+        animate('2s', style({ opacity: 1 })),
       ]),
       transition(':leave', [
-        animate('5s', style({ opacity: 0 }))
+        animate('2s', style({ opacity: 0 }))
       ])
     ]),
   ],
@@ -20,13 +20,9 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class CardComponent implements OnInit {
 
-  @Input()
-  public size: 'auto' | 'small' | 'medium' | 'large' = 'auto';
-
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
 

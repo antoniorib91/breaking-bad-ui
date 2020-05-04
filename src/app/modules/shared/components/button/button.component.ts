@@ -1,20 +1,20 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-label',
-  templateUrl: './label.component.html',
-  styleUrls: ['./label.component.scss'],
+  selector: 'app-button',
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LabelComponent implements OnInit {
+export class ButtonComponent implements OnInit {
 
   @Input()
   public color: 'green' | 'white' | 'black' = 'black';
 
   @Input()
-  public size: 'small' | 'medium' | 'large' = 'medium';
+  public size: 'small' | 'medium' | 'large' = 'small';
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {}
 

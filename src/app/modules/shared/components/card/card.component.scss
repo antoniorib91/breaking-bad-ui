@@ -6,19 +6,6 @@
   color: $card_font_color;
   margin: 10px 5px;
 
-  &.small {
-    max-width: 200px;
-    height: 280px;
-  }
-
-  &.medium {
-    max-width: 350px;
-  }
-
-  &.large {
-    max-width: 700px;
-  }
-
   .card-footer {
     border-color: $card_border_color;
 

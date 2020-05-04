@@ -1,0 +1,17 @@
+.character-detail {
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 50vh;
+
+  &.message {
+    justify-content: center;
+    align-items: center;
+    .message-image {
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+
+}

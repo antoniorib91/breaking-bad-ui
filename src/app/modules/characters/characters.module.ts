@@ -5,6 +5,9 @@ import { CharacterDetailComponent } from './components/character-detail/characte
 import { CharacterCardComponent } from './components/character-card/character-card.component';
 import { SharedModule } from '../shared/shared.module';
 import { CharactersService } from './services/characters.service';
+import { CharacterDetailMobileComponent } from './components/character-detail-mobile/character-detail-mobile.component';
+import { CharacterDetailDataComponent } from './components/character-detail-data/character-detail-data.component';
+import { CharacterDetailDataEmptyComponent } from './components/character-detail-data-empty/character-detail-data-empty.component';
 
 
 
@@ -12,11 +15,15 @@ import { CharactersService } from './services/characters.service';
   declarations: [
     CharacterListComponent,
     CharacterDetailComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    CharacterDetailMobileComponent,
+    CharacterDetailDataComponent,
+    CharacterDetailDataEmptyComponent
   ],
   exports: [
     CharacterListComponent,
-    CharacterDetailComponent
+    CharacterDetailComponent,
+    CharacterDetailMobileComponent
   ],
   providers: [
     CharactersService
